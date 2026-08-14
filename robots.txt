@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://tirumalagroups.in/sitemap.xml
