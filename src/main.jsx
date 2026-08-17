@@ -202,9 +202,14 @@ function App() {
             <a href="mailto:Tirumalagroups1@gmail.com">
               Tirumalagroups1@gmail.com
             </a>
-
+<p><strong>Phone</strong></p>
+<p>
+  <a href="tel:8971294612">8971294612</a><br />
+  <a href="tel:9108075232">9108075232</a><br />
+  <a href="tel:9686714941">9686714941</a>
+</p>
             <p><strong>Address</strong></p>
-            <p>24, Pallarahalli, Nelamangala, Bangalore – 562123</p>
+           <p>01, Pallarahalli, Nelamangala, Bangalore – 562123</p>
 
             <a className="primary-btn" href="mailto:Tirumalagroups1@gmail.com">
               Request a Quote →
