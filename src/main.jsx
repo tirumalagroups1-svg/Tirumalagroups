@@ -1,188 +1,229 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./style.css";
-import React from "react";
-import { createRoot } from "react-dom/client";
-import "./style.css";
 
 function App() {
   return (
-    <>
-      <div className="hero">
-        <nav>
-          <div className="logo">
-            TIRUMALA <span>GROUPS</span>
-          </div>
-
+    <div>
+      <nav className="navbar">
+        <div className="logo">
+          <span>TG</span>
           <div>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#solutions">Solutions</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <strong>TIRUMALA</strong>
+            <small>GROUPS</small>
           </div>
-        </nav>
+        </div>
 
-        <div className="heroContent" id="home">
-          <div className="tag">
-            # BUILDING STRONG FOUNDATIONS FOR A BETTER TOMORROW
+        <div className="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a className="quote-top" href="#contact">
+          Get a Quote →
+        </a>
+      </nav>
+
+      <main>
+        <section id="home" className="hero">
+          <div className="hero-content">
+            <p className="eyebrow">BUILDING STRONG FOUNDATIONS FOR A BETTER TOMORROW</p>
+
+            <h1>
+              Strong Steel.
+              <br />
+              <span>Smart Construction.</span>
+            </h1>
+
+            <p className="hero-text">
+              PEB Industrial Sheds, Building Construction & Contractors —
+              delivering practical, durable and quality-focused construction
+              solutions.
+            </p>
+
+            <div className="hero-buttons">
+              <a className="primary-btn" href="#contact">
+                Request a Free Quote →
+              </a>
+              <a className="secondary-btn" href="#services">
+                Explore Services
+              </a>
+            </div>
+
+            <div className="highlights">
+              <span>✓ Quality-focused execution</span>
+              <span>✓ Steel & PEB solutions</span>
+              <span>✓ Project support</span>
+            </div>
           </div>
 
-          <h1>
-            Strong Steel.
-            <br />
-            <span>Smart Construction.</span>
-          </h1>
+          <div className="hero-card">
+            <div className="building">
+              <div className="roof"></div>
+              <div className="shed-body">
+                <div className="door"></div>
+                <div className="window"></div>
+              </div>
+              <div className="beam beam1"></div>
+              <div className="beam beam2"></div>
+              <div className="beam beam3"></div>
+            </div>
 
-          <p className="lead">
-            PEB Industrial Sheds, Building Construction & Contractors —
-            delivering practical, durable and quality-focused construction
-            solutions.
+            <div className="strength-card">
+              <b>✓ Built for strength</b>
+              <small>Industrial & commercial solutions</small>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" className="section about">
+          <div>
+            <p className="section-label">ABOUT TIRUMALA GROUPS</p>
+            <h2>Building with Strength, Quality & Trust.</h2>
+          </div>
+
+          <p>
+            TIRUMALA GROUPS provides PEB industrial shed solutions, building
+            construction and contracting services. Our focus is practical
+            construction, strong materials, quality workmanship and dependable
+            project execution.
           </p>
+        </section>
 
-          <div className="buttons">
-            <a className="btn primary" href="#contact">
-              Request a Free Quote →
+        <section id="services" className="section">
+          <p className="section-label">OUR SERVICES</p>
+          <h2>Complete Construction Solutions</h2>
+
+          <div className="grid">
+            <div className="card">
+              <div className="icon">🏭</div>
+              <h3>PEB Industrial Sheds</h3>
+              <p>
+                Modern pre-engineered building solutions for factories,
+                warehouses and industrial projects.
+              </p>
+            </div>
+
+            <div className="card">
+              <div className="icon">🏗️</div>
+              <h3>Building Construction</h3>
+              <p>
+                Strong and durable construction solutions for commercial and
+                industrial requirements.
+              </p>
+            </div>
+
+            <div className="card">
+              <div className="icon">🔩</div>
+              <h3>Steel Solutions</h3>
+              <p>
+                Quality steel and structural solutions using trusted materials
+                and professional execution.
+              </p>
+            </div>
+
+            <div className="card">
+              <div className="icon">👷</div>
+              <h3>Contracting</h3>
+              <p>
+                Reliable project coordination, fabrication, erection and
+                construction support.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="solutions" className="section dark-section">
+          <p className="section-label">OUR SOLUTIONS</p>
+          <h2>Designed for Real-World Projects</h2>
+
+          <div className="solution-grid">
+            <div>
+              <h3>Industrial Warehouses</h3>
+              <p>Efficient and durable warehouse structures for business growth.</p>
+            </div>
+
+            <div>
+              <h3>PEB Structures</h3>
+              <p>Fast, practical and economical pre-engineered steel buildings.</p>
+            </div>
+
+            <div>
+              <h3>Commercial Buildings</h3>
+              <p>Strong construction solutions designed around project requirements.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" className="section">
+          <p className="section-label">PROJECTS</p>
+          <h2>Construction That Stands Strong</h2>
+
+          <div className="project-grid">
+            <div className="project project-one">
+              <div>
+                <span>01</span>
+                <h3>Industrial PEB Shed</h3>
+              </div>
+            </div>
+
+            <div className="project project-two">
+              <div>
+                <span>02</span>
+                <h3>Steel Structure</h3>
+              </div>
+            </div>
+
+            <div className="project project-three">
+              <div>
+                <span>03</span>
+                <h3>Building Construction</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" className="contact-section">
+          <div>
+            <p className="section-label">GET IN TOUCH</p>
+            <h2>Let's Build Something Strong.</h2>
+            <p>
+              Contact TIRUMALA GROUPS for PEB industrial sheds, building
+              construction and contracting requirements.
+            </p>
+          </div>
+
+          <div className="contact-box">
+            <p><strong>Email</strong></p>
+            <a href="mailto:Tirumalagroups1@gmail.com">
+              Tirumalagroups1@gmail.com
             </a>
 
-            <a className="btn" href="#services">
-              Explore Services
+            <p><strong>Address</strong></p>
+            <p>24, Pallarahalli, Nelamangala, Bangalore – 562123</p>
+
+            <a className="primary-btn" href="mailto:Tirumalagroups1@gmail.com">
+              Request a Quote →
             </a>
           </div>
-        </div>
-      </div>
-
-      <section id="about" className="about">
-        <h2>About Tirumala Groups</h2>
-        <p className="about">
-          Tirumala Groups provides reliable PEB industrial shed,
-          building construction and contractor services. We focus on
-          strong engineering, quality materials and practical project
-          execution.
-        </p>
-      </section>
-
-      <section id="services">
-        <h2>Our Services</h2>
-
-        <div className="grid">
-          <div className="card">
-            <h3>PEB Industrial Sheds</h3>
-            <p>
-              Complete pre-engineered building solutions for warehouses,
-              factories and industrial facilities.
-            </p>
-          </div>
-
-          <div className="card">
-            <h3>Building Construction</h3>
-            <p>
-              Quality construction solutions designed for strength,
-              durability and long-term performance.
-            </p>
-          </div>
-
-          <div className="card">
-            <h3>Steel Structures</h3>
-            <p>
-              Structural steel fabrication and erection using quality
-              materials and professional execution.
-            </p>
-          </div>
-
-          <div className="card">
-            <h3>Construction Contractor</h3>
-            <p>
-              End-to-end project support from planning and civil work
-              through completion.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="solutions">
-        <h2>Steel & PEB Solutions</h2>
-        <p className="about">
-          We provide practical steel and PEB solutions for industrial,
-          commercial and construction requirements.
-        </p>
-
-        <div className="grid">
-          <div className="card">
-            <h3>JSW Steel</h3>
-            <p>Quality steel solutions for demanding construction projects.</p>
-          </div>
-
-          <div className="card">
-            <h3>Tata Steel</h3>
-            <p>Reliable structural steel solutions for modern construction.</p>
-          </div>
-
-          <div className="card">
-            <h3>PEB Solutions</h3>
-            <p>Efficient pre-engineered building systems from design to erection.</p>
-          </div>
-
-          <div className="card">
-            <h3>Project Support</h3>
-            <p>Professional coordination and execution for complete projects.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <div className="grid">
-          <div className="card">
-            <h3>Industrial Projects</h3>
-            <p>PEB sheds and industrial construction solutions.</p>
-          </div>
-
-          <div className="card">
-            <h3>Commercial Buildings</h3>
-            <p>Strong and practical commercial construction solutions.</p>
-          </div>
-
-          <div className="card">
-            <h3>Steel Structures</h3>
-            <p>Fabrication and erection of durable steel structures.</p>
-          </div>
-
-          <div className="card">
-            <h3>Custom Construction</h3>
-            <p>Solutions planned around your project requirements.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="contact">
-        <h2>Get a Free Quote</h2>
-
-        <p className="contact">
-          Contact Tirumala Groups for PEB industrial sheds, building
-          construction and contractor requirements.
-        </p>
-
-        <p className="contact">
-          <strong>Email:</strong>{" "}
-          <a href="mailto:Tirumalagroups1@gmail.com">
-            Tirumalagroups1@gmail.com
-          </a>
-        </p>
-
-        <p className="contact">
-          <strong>Address:</strong> 24, Pallarahalli, Nelamangala,
-          Bangalore – 562123
-        </p>
-      </section>
+        </section>
+      </main>
 
       <footer>
-        © {new Date().getFullYear()} TIRUMALA GROUPS — PEB Industrial Sheds,
-        Building Construction & Contractors
+        <div>
+          <strong>TIRUMALA GROUPS</strong>
+          <p>PEB Industrial Sheds • Building Construction • Contractors</p>
+        </div>
+
+        <p>© 2026 Tirumala Groups. All Rights Reserved.</p>
       </footer>
-    </>
+    </div>
   );
 }
 
+createRoot(document.getElementById("root")).render(<App />);
 createRoot(document.getElementById("root")).render(<App />);
