@@ -1,4 +1,13 @@
-import React from "react";
+public/images/
+hero-shed.jpg
+industrial-shed.jpg
+warehouse.jpg
+construction.jpg
+steel-structure.jpg
+peb-project-1.jpg
+peb-project-2.jpg
+peb-project-3.jpg
+peb-project-4.jpgimport React from "react";
 import { createRoot } from "react-dom/client";
 import "./style.css";
 
