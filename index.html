@@ -1,286 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Tirumala Groups - PEB industrial sheds, steel structures, building construction and contracting solutions." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tirumala Groups | PEB Industrial Sheds & Steel Structures</title>
+  <meta name="description" content="Tirumala Groups provides PEB industrial sheds, warehouse construction, steel structures, building construction and contracting solutions in Nelamangala, Bangalore.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.tirumalagroups.in/">
   <style>
-    :root{
-      --bg:#0a0d0f;
-      --panel:#11161a;
-      --panel2:#151b20;
-      --text:#f4f1e9;
-      --muted:#a9b0b5;
-      --gold:#e8a52b;
-      --gold2:#ffc45a;
-      --line:rgba(255,255,255,.09);
-      --max:1180px;
-    }
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
-    body{
-      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      background:var(--bg);color:var(--text);line-height:1.6;
-      overflow-x:hidden;
-    }
+    body{font-family:Arial,Helvetica,sans-serif;background:#0b0d0f;color:#f5f5f2;line-height:1.6}
     a{text-decoration:none;color:inherit}
-    img{max-width:100%;display:block}
-    .container{width:min(var(--max),92%);margin:auto}
-    .nav{
-      position:fixed;top:0;left:0;right:0;z-index:50;
-      background:rgba(10,13,15,.78);backdrop-filter:blur(16px);
-      border-bottom:1px solid var(--line);
-    }
-    .nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.04em}
-    .brand-mark{
-      width:42px;height:42px;border:1px solid #555;display:grid;place-items:center;
-      font-size:14px;background:#0f1316;
-    }
-    .brand span{display:block}.brand small{font-size:9px;letter-spacing:.38em;color:var(--gold)}
-    .links{display:flex;gap:30px;color:#c7cbd0;font-size:14px}
-    .links a:hover{color:var(--gold)}
-    .nav-cta{
-      padding:11px 17px;border:1px solid rgba(232,165,43,.55);color:var(--gold);
-      border-radius:999px;font-size:13px;font-weight:700;
-    }
-    .menu{display:none;background:none;border:0;color:white;font-size:27px}
-    .hero{padding:145px 0 90px;min-height:780px;display:grid;align-items:center;position:relative}
-    .hero:before{
-      content:"";position:absolute;inset:0;pointer-events:none;
-      background:radial-gradient(circle at 78% 25%,rgba(232,165,43,.12),transparent 30%),
-                 linear-gradient(180deg,transparent,rgba(0,0,0,.25));
-    }
-    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:65px;align-items:center;position:relative}
-    .eyebrow{color:var(--gold);font-weight:800;font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
-    h1{font-size:clamp(48px,6.2vw,86px);line-height:.95;letter-spacing:-.055em;max-width:700px}
-    h1 em{font-style:normal;color:var(--gold)}
-    .hero-copy{font-size:18px;color:var(--muted);max-width:610px;margin:27px 0}
-    .actions{display:flex;gap:14px;flex-wrap:wrap}
-    .btn{padding:14px 22px;border-radius:8px;font-weight:800;font-size:14px;display:inline-flex;align-items:center;gap:8px}
-    .btn-primary{background:var(--gold);color:#111}
-    .btn-primary:hover{background:var(--gold2)}
-    .btn-secondary{border:1px solid var(--line);background:#11161a}
-    .trust{display:flex;gap:25px;margin-top:34px;color:#b9c0c4;font-size:13px;flex-wrap:wrap}
-    .trust b{color:white}
-    .visual{
-      min-height:500px;border:1px solid var(--line);border-radius:22px;overflow:hidden;
-      background:
-        linear-gradient(135deg,rgba(232,165,43,.12),transparent 35%),
-        #11171b;
-      position:relative;box-shadow:0 30px 80px rgba(0,0,0,.35);
-    }
-    .visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.8))}
-    .shed{
-      position:absolute;inset:0;display:grid;place-items:center;padding:45px;
-    }
-    .shed svg{width:100%;height:100%;max-width:560px;opacity:.96}
-    .visual-label{position:absolute;z-index:2;left:28px;bottom:25px}
-    .visual-label strong{font-size:22px}.visual-label span{display:block;color:#aeb5ba;font-size:12px;margin-top:3px}
-    section{padding:105px 0}
-    .section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}
-    .section-head h2{font-size:clamp(34px,4vw,56px);letter-spacing:-.04em;line-height:1}
-    .section-head p{max-width:500px;color:var(--muted)}
-    .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
-    .about-card{background:var(--panel);border:1px solid var(--line);padding:34px;border-radius:18px}
-    .about-card h3{font-size:28px;margin-bottom:13px}.about-card p{color:var(--muted)}
-    .numbers{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
-    .number{background:var(--panel2);padding:23px;border:1px solid var(--line);border-radius:13px}
-    .number strong{font-size:34px;color:var(--gold);display:block}.number span{font-size:12px;color:var(--muted)}
-    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .service{padding:30px;background:var(--panel);border:1px solid var(--line);border-radius:17px;transition:.25s}
-    .service:hover{transform:translateY(-5px);border-color:rgba(232,165,43,.45)}
-    .icon{width:44px;height:44px;border-radius:10px;display:grid;place-items:center;background:rgba(232,165,43,.12);color:var(--gold);font-weight:900;margin-bottom:22px}
-    .service h3{font-size:20px;margin-bottom:9px}.service p{color:var(--muted);font-size:14px}
-    .projects{display:grid;grid-template-columns:1.35fr .65fr;grid-template-rows:250px 250px;gap:15px}
-    .project{border-radius:17px;overflow:hidden;position:relative;border:1px solid var(--line);background:#151b1f}
-    .project.big{grid-row:span 2}
-    .project-bg{position:absolute;inset:0;background:
-      linear-gradient(135deg,#202a2e,#0e1214 60%,#3a2811);
-    }
-    .project:nth-child(2) .project-bg{background:linear-gradient(135deg,#18252a,#111517 55%,#61431b)}
-    .project:nth-child(3) .project-bg{background:linear-gradient(135deg,#30302b,#121516 55%,#6c4b1c)}
-    .project svg{position:absolute;inset:12%;width:76%;height:76%;opacity:.6}
-    .project-info{position:absolute;left:22px;right:22px;bottom:20px;z-index:2}
-    .project-info h3{font-size:21px}.project-info span{font-size:12px;color:#c1c6c9}
-    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    .step{border-top:2px solid var(--gold);padding:23px 3px}
-    .step b{color:var(--gold);font-size:12px;letter-spacing:.1em}.step h3{margin:12px 0 7px}.step p{color:var(--muted);font-size:14px}
-    .quote{background:linear-gradient(135deg,#181c1e,#0e1113);border:1px solid var(--line);border-radius:24px;padding:60px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
-    .quote h2{font-size:clamp(34px,4vw,55px);line-height:1;letter-spacing:-.04em}.quote p{color:var(--muted);margin-top:15px;max-width:650px}
-    .contact-details{display:grid;gap:14px;margin-top:25px;color:#c5cbcf;font-size:14px}
-    .contact-details>div{display:flex;gap:12px;align-items:flex-start}
-    .contact-details span{font-size:19px;line-height:1.2}
-    .contact-details b{color:#fff}
-    .contact-details a{color:var(--gold);font-weight:700}
-    .contact-actions{min-width:230px}
-    footer{border-top:1px solid var(--line);padding:35px 0;color:#899095;font-size:13px}
-    .footer-inner{display:flex;justify-content:space-between;gap:20px}
-    .gold{color:var(--gold)}
-    @media(max-width:900px){
-      .links,.nav-cta{display:none}.menu{display:block}
-      .hero-grid,.about,.quote{grid-template-columns:1fr}
-      .visual{min-height:420px}.services{grid-template-columns:repeat(2,1fr)}
-      .projects{grid-template-columns:1fr;grid-template-rows:300px 220px 220px}.project.big{grid-row:auto}
-      .process{grid-template-columns:repeat(2,1fr)}
-    }
-    @media(max-width:600px){
-      .hero{padding-top:125px}.visual{min-height:330px}.services{grid-template-columns:1fr}
-      .process{grid-template-columns:1fr}.numbers{grid-template-columns:1fr}
-      .quote{padding:35px 25px}.footer-inner{flex-direction:column}
-      h1{font-size:50px}
+    .container{width:min(1180px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(11,13,15,.94);backdrop-filter:blur(12px);border-bottom:1px solid #25282b}
+    nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;letter-spacing:.04em;font-size:20px}
+    .logo span{display:block;font-size:9px;letter-spacing:.35em;color:#e9a52f;margin-top:-4px}
+    .navlinks{display:flex;gap:34px;color:#c9c9c6;font-size:14px}
+    .navlinks a:hover{color:#e9a52f}
+    .topbtn,.btn{display:inline-block;background:#e9a52f;color:#111;padding:12px 20px;border-radius:6px;font-weight:700}
+    .hero{min-height:700px;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center;padding:70px 0}
+    .hero-img{height:540px;border-radius:18px;overflow:hidden;border:1px solid #292d30}
+    .hero-img img{width:100%;height:100%;object-fit:cover}
+    .eyebrow{color:#e9a52f;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px}
+    h1{font-size:clamp(48px,6vw,82px);line-height:.98;letter-spacing:-.055em;margin-bottom:24px}
+    h1 span{color:#e9a52f}
+    .hero p{color:#bfc1bf;max-width:600px;font-size:17px;margin-bottom:28px}
+    .contactline{color:#d8d8d5;margin-top:18px;font-size:14px}
+    section{padding:90px 0}
+    .section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}
+    .section-head h2{font-size:44px;letter-spacing:-.04em}
+    .section-head p{color:#9fa3a1;max-width:510px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#121518;border:1px solid #292d30;border-radius:14px;overflow:hidden}
+    .card-img{height:260px;overflow:hidden}
+    .card-img img{width:100%;height:100%;object-fit:cover;transition:.5s}
+    .card:hover img{transform:scale(1.05)}
+    .card-body{padding:20px}
+    .card-body h3{font-size:19px;margin-bottom:6px}
+    .card-body p{color:#929794;font-size:14px}
+    .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+    .about-img{height:500px;border-radius:18px;overflow:hidden}
+    .about-img img{width:100%;height:100%;object-fit:cover}
+    .about h2{font-size:48px;line-height:1.05;margin-bottom:20px}
+    .about p{color:#aeb2af;margin-bottom:18px}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:25px}
+    .feature{border:1px solid #2b2f32;padding:18px;border-radius:10px;background:#111416}
+    .feature b{display:block;color:#e9a52f;margin-bottom:5px}
+    .contact{background:#121518;border-top:1px solid #292d30;border-bottom:1px solid #292d30}
+    .contactbox{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+    .contact h2{font-size:48px;line-height:1.05;margin-bottom:18px}
+    .details{display:grid;gap:14px}
+    .detail{padding:18px;border:1px solid #2b2f32;border-radius:10px}
+    .detail small{display:block;color:#e9a52f;text-transform:uppercase;letter-spacing:.12em}
+    footer{padding:30px 0;color:#858986;font-size:13px}
+    .float{position:fixed;right:22px;bottom:22px;z-index:30;display:flex;gap:10px}
+    .float a{padding:14px 18px;border-radius:50px;font-weight:700;box-shadow:0 8px 25px #0008}
+    .wa{background:#25d366;color:white}.call{background:#e9a52f;color:#111}
+    @media(max-width:850px){
+      .navlinks{display:none}.hero,.about,.contactbox{grid-template-columns:1fr}
+      .hero{padding:45px 0}.hero-img{height:380px;order:2}
+      .grid{grid-template-columns:1fr}.section-head{display:block}
+      .section-head h2{font-size:36px;margin-bottom:10px}.about h2,.contact h2{font-size:38px}
+      .about-img{height:360px}.features{grid-template-columns:1fr}
     }
   </style>
 </head>
 <body>
 
-<header class="nav">
-  <div class="container nav-inner">
-    <a href="#home" class="brand">
-      <div class="brand-mark">TG</div>
-      <div>TIRUMALA<small>GROUPS</small></div>
-    </a>
-    <nav class="links">
-      <a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#process">Process</a><a href="#contact">Contact</a>
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#">TG &nbsp; TIRUMALA <span>GROUPS</span></a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a>
+      </div>
+      <a class="topbtn" href="https://wa.me/918971294612?text=Hello%20Tirumala%20Groups%2C%20I%20need%20a%20free%20quotation.">WhatsApp</a>
     </nav>
-    <a class="nav-cta" href="https://wa.me/918971294612" target="_blank">WhatsApp ↗</a>
-    <button class="menu" aria-label="Menu">☰</button>
   </div>
 </header>
 
-<main id="home">
-  <section class="hero">
-    <div class="container hero-grid">
+<main>
+  <section class="container hero">
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1400&q=85" alt="Modern industrial warehouse">
+    </div>
+    <div>
+      <div class="eyebrow">PEB Industrial Solutions</div>
+      <h1>Building <span>Strength.</span><br>Creating Tomorrow.</h1>
+      <p>TIRUMALA GROUPS provides professional PEB industrial shed, warehouse, building construction, steel structure and contracting solutions with a focus on quality, strength and dependable execution.</p>
+      <a class="btn" href="#contact">Get Free Quotation →</a>
+      <div class="contactline">✓ Quality Materials &nbsp; ✓ Professional Work &nbsp; ✓ Reliable Execution</div>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Our Work</div><h2>Buildings & Warehouses</h2></div>
+      <p>Explore a modern project gallery for industrial sheds, warehouses, steel structures and commercial construction.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85" alt="Steel construction project"></div><div class="card-body"><h3>Steel Structure</h3><p>Heavy-duty structural construction and fabrication.</p></div></article>
+      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=85" alt="Building construction"></div><div class="card-body"><h3>Building Construction</h3><p>Professional construction with dependable execution.</p></div></article>
+      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1000&q=85" alt="Industrial construction"></div><div class="card-body"><h3>Industrial Projects</h3><p>Practical solutions for industrial requirements.</p></div></article>
+      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1590496793929-36417d3117de?auto=format&fit=crop&w=1000&q=85" alt="Warehouse interior"></div><div class="card-body"><h3>Warehouse Solutions</h3><p>Spacious, functional and durable warehouse systems.</p></div></article>
+      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1590479773265-7464e5d48118?auto=format&fit=crop&w=1000&q=85" alt="Industrial building"></div><div class="card-body"><h3>PEB Sheds</h3><p>Pre-engineered building solutions for industry.</p></div></article>
+      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85" alt="Commercial building interior"></div><div class="card-body"><h3>Commercial Spaces</h3><p>Clean, strong and professionally finished spaces.</p></div></article>
+    </div>
+  </section>
+
+  <section id="about" class="container about">
+    <div class="about-img"><img src="https://images.unsplash.com/photo-1590725140246-20acdee442be?auto=format&fit=crop&w=1200&q=85" alt="Industrial warehouse building"></div>
+    <div>
+      <div class="eyebrow">Why Tirumala Groups</div>
+      <h2>Strong structures.<br>Reliable execution.</h2>
+      <p>We deliver industrial and construction solutions designed around strength, quality and practical project requirements.</p>
+      <div class="features">
+        <div class="feature"><b>PEB Solutions</b>Industrial sheds and pre-engineered buildings.</div>
+        <div class="feature"><b>Steel Structures</b>Fabrication and structural construction.</div>
+        <div class="feature"><b>Construction</b>Building and contracting solutions.</div>
+        <div class="feature"><b>Quality First</b>Professional work and dependable execution.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="container">
+    <div class="section-head"><div><div class="eyebrow">What We Do</div><h2>Our Services</h2></div></div>
+    <div class="grid">
+      <article class="card"><div class="card-body"><h3>PEB Industrial Sheds</h3><p>Planning and construction of pre-engineered industrial buildings.</p></div></article>
+      <article class="card"><div class="card-body"><h3>Warehouse Construction</h3><p>Functional warehouse structures built for long-term use.</p></div></article>
+      <article class="card"><div class="card-body"><h3>Steel Fabrication</h3><p>Professional steel structure fabrication and erection.</p></div></article>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contactbox">
       <div>
-        <div class="eyebrow">PEB • Steel • Construction</div>
-        <h1>Building <em>Strength.</em><br>Creating Tomorrow.</h1>
-        <p class="hero-copy">TIRUMALA GROUPS provides professional PEB industrial shed, building construction, steel structure and contracting solutions with a focus on quality, strength and dependable execution.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#contact">Get Free Quote →</a>
-          <a class="btn btn-secondary" href="tel:+918971294612">Call 8971294612</a>
-        </div>
-        <div class="trust"><span>✓ <b>Quality Materials</b></span><span>✓ <b>Professional Work</b></span><span>✓ <b>Reliable Execution</b></span></div>
+        <div class="eyebrow">Contact Tirumala Groups</div>
+        <h2>Let's discuss your next project.</h2>
+        <p style="color:#aeb2af">Call or WhatsApp us for enquiries and a free quotation.</p>
       </div>
-
-      <div class="visual">
-        <div class="shed">
-          <svg viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M70 405L300 145L530 405" stroke="#E8A52B" stroke-width="7"/>
-            <path d="M105 405V270L300 105L495 270V405" stroke="#F2F0E9" stroke-width="6"/>
-            <path d="M150 405V300L300 175L450 300V405" stroke="#8E979C" stroke-width="4"/>
-            <path d="M105 270H495M150 300H450M105 335H495M105 370H495" stroke="#4C555A" stroke-width="3"/>
-            <path d="M70 405H530" stroke="#E8A52B" stroke-width="8"/>
-            <path d="M180 405V335H420V405" stroke="#F2F0E9" stroke-width="5"/>
-            <path d="M220 405V360H380V405" stroke="#4C555A" stroke-width="3"/>
-          </svg>
-        </div>
-        <div class="visual-label"><strong>Industrial Strength</strong><span>PEB & structural steel solutions</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <div class="section-head">
-        <h2>Built for<br><span class="gold">performance.</span></h2>
-        <p>From structural planning to final execution, we deliver practical construction solutions designed for durability, safety and long-term value.</p>
-      </div>
-      <div class="about">
-        <div class="about-card">
-          <h3>Tirumala Groups</h3>
-          <p>We combine engineering, fabrication and on-site execution to deliver dependable industrial and commercial structures. Our approach is simple: clear planning, quality materials and disciplined execution.</p>
-        </div>
-        <div class="numbers">
-          <div class="number"><strong>01</strong><span>Single-point project coordination</span></div>
-          <div class="number"><strong>100%</strong><span>Focus on quality execution</span></div>
-          <div class="number"><strong>PEB</strong><span>Industrial shed expertise</span></div>
-          <div class="number"><strong>24/7</strong><span>Project support & communication</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="services">
-    <div class="container">
-      <div class="section-head"><h2>What we <span class="gold">build.</span></h2><p>End-to-end solutions for industrial, commercial and structural construction requirements.</p></div>
-      <div class="services">
-        <article class="service"><div class="icon">01</div><h3>PEB Industrial Sheds</h3><p>Efficient pre-engineered buildings for factories, warehouses, workshops and industrial facilities.</p></article>
-        <article class="service"><div class="icon">02</div><h3>Steel Structures</h3><p>Strong structural steel solutions engineered for practical installation and long-term performance.</p></article>
-        <article class="service"><div class="icon">03</div><h3>Building Construction</h3><p>Professional construction support from planning through execution and finishing.</p></article>
-        <article class="service"><div class="icon">04</div><h3>Roofing & Cladding</h3><p>Durable roofing and wall cladding systems for protection, function and appearance.</p></article>
-        <article class="service"><div class="icon">05</div><h3>Fabrication</h3><p>Accurate fabrication and assembly of structural components for industrial projects.</p></article>
-        <article class="service"><div class="icon">06</div><h3>Contracting</h3><p>Reliable project execution with coordinated manpower, materials and site management.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
-      <div class="section-head"><h2>Selected <span class="gold">projects.</span></h2><p>Replace these visual placeholders with your real completed project photographs.</p></div>
-      <div class="projects">
-        <div class="project big"><div class="project-bg"></div><svg viewBox="0 0 500 300"><path d="M50 250L250 65L450 250M85 250V160L250 15L415 160V250M130 250V190L250 85L370 190V250" stroke="#E8A52B" stroke-width="8" fill="none"/></svg><div class="project-info"><h3>Industrial PEB Facility</h3><span>PEB • Structural Steel • Roofing</span></div></div>
-        <div class="project"><div class="project-bg"></div><div class="project-info"><h3>Warehouse Structure</h3><span>Design • Fabrication • Execution</span></div></div>
-        <div class="project"><div class="project-bg"></div><div class="project-info"><h3>Commercial Building</h3><span>Construction • Contracting</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="process">
-    <div class="container">
-      <div class="section-head"><h2>Our <span class="gold">process.</span></h2><p>A straightforward workflow that keeps your project clear, coordinated and moving.</p></div>
-      <div class="process">
-        <div class="step"><b>01 / DISCOVER</b><h3>Understand</h3><p>We discuss your site, requirements, budget and project goals.</p></div>
-        <div class="step"><b>02 / PLAN</b><h3>Engineer</h3><p>We develop the right structural and execution approach for your needs.</p></div>
-        <div class="step"><b>03 / BUILD</b><h3>Execute</h3><p>Fabrication, material coordination and site work are managed professionally.</p></div>
-        <div class="step"><b>04 / DELIVER</b><h3>Complete</h3><p>Final checks and handover with a focus on quality and reliability.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <div class="quote">
-        <div>
-          <div class="eyebrow">Enquiries • Free Quotation • Discuss</div>
-          <h2>Let's build something <span class="gold">strong.</span></h2>
-          <p>Contact Tirumala Groups for enquiries, a free quotation or to discuss your PEB, steel structure and construction project.</p>
-          <div class="contact-details">
-            <div><span>📍</span><div><b>Office Address</b><br>No. 1, Pallarahalli, Nelamangala,<br>Bangalore - 562123</div></div>
-            <div><span>📞</span><div><b>Call Us</b><br><a href="tel:+918971294612">8971294612</a> · <a href="tel:+919108075232">9108075232</a> · <a href="tel:+919686714941">9686714941</a></div></div>
-          </div>
-        </div>
-        <div class="actions contact-actions">
-          <a class="btn btn-primary" href="https://wa.me/918971294612?text=Hello%20Tirumala%20Groups%2C%20I%20would%20like%20a%20free%20quotation%20and%20would%20like%20to%20discuss%20my%20project." target="_blank">WhatsApp • Free Quotation</a>
-          <a class="btn btn-secondary" href="tel:+918971294612">Call • Discuss Project</a>
-          <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=No.1+Pallarahalli+Nelamangala+Bangalore+562123" target="_blank">Open Address in Maps</a>
-        </div>
+      <div class="details">
+        <div class="detail"><small>Phone</small>8971294612 · 9108075232 · 9686714941</div>
+        <div class="detail"><small>Address</small>No. 1, Pallarahalli, Nelamangala, Bangalore - 562123</div>
+        <div><a class="btn" href="tel:+918971294612">Call for Free Quotation →</a></div>
       </div>
     </div>
   </section>
 </main>
 
-<footer>
-  <div class="container footer-inner">
-    <div>© 2026 <span class="gold">TIRUMALA GROUPS</span>. All rights reserved.</div>
-    <div>No. 1, Pallarahalli, Nelamangala, Bangalore - 562123</div>
-  </div>
-</footer>
+<div class="float">
+  <a class="wa" href="https://wa.me/918971294612?text=Hello%20Tirumala%20Groups%2C%20I%20need%20a%20free%20quotation.">WhatsApp</a>
+  <a class="call" href="tel:+918971294612">Call</a>
+</div>
 
-<script>
-  document.querySelector('.menu').addEventListener('click', function(){
-    const nav = document.querySelector('.links');
-    const visible = nav.style.display === 'flex';
-    nav.style.display = visible ? '' : 'flex';
-    nav.style.position = 'absolute';
-    nav.style.top = '78px';
-    nav.style.left = '0';
-    nav.style.right = '0';
-    nav.style.padding = '20px';
-    nav.style.background = '#0a0d0f';
-    nav.style.flexDirection = 'column';
-    nav.style.borderBottom = '1px solid rgba(255,255,255,.09)';
-  });
-</script>
+<footer><div class="container">© 2026 Tirumala Groups · PEB Industrial Sheds · Steel Structures · Construction</div></footer>
 </body>
 </html>
