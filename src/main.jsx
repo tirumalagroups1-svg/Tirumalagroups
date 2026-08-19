@@ -675,17 +675,27 @@ function App() {
               <a href={`mailto:${email}`}>{email}</a>
             </div>
 
-            <div>
-              <span>ADDRESS</span>
-              <p>
-                01, Pallarahalli,
-                <br />
-                Nelamangala, Bangalore – 562123
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+           <div>
+  <span>ADDRESS</span>
+  <p>
+    01, Pallarahalli,
+    <br />
+    Nelamangala, Bangalore - 562123
+  </p>
+
+  <div style={{ marginTop: "20px", borderRadius: "12px", overflow: "hidden" }}>
+    <iframe
+      src="https://www.google.com/maps?q=01%2C%20Pallarahalli%2C%20Nelamangala%2C%20Bangalore%20-%20562123&output=embed"
+      width="100%"
+      height="300"
+      style={{ border: 0, display: "block" }}
+      loading="lazy"
+      allowFullScreen
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Tirumala Groups Location"
+    ></iframe>
+  </div>
+</div>
 
       {/* FOOTER */}
       <footer>
